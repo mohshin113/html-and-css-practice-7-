@@ -1,0 +1,42 @@
+/* iPad Design */
+
+@media screen and (max-width: 1200px) and (min-width: 790px) {
+  .container{
+    width: 96%;
+    background: rgb(125, 125, 240);
+  }
+}
+
+/* Mobile Design */
+@media screen and (max-width: 789px) and (min-width: 250px) {
+  .container {
+    width: 96%;
+   
+  }
+  #content .container {
+    flex-direction: column;
+     
+  }
+  .child_content:nth-child(n) img{
+      width: auto;
+    float: none;
+    display: block;
+    margin-bottom: 15px;
+  }
+  .main_content {
+    flex-basis: 100%;
+    grid-template-columns: auto;
+    gap: 10px;
+}
+  .main_content .child_content,
+  .main_content .child_content:first-child {
+    grid-column: 1/2;
+  }
+  .main_content .child_content p {
+    display: block;
+  }
+  #main_sideber {
+    flex-basis: 100%;
+    
+
+}

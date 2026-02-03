@@ -1,0 +1,151 @@
+/* common css*/
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+body{
+  font-family:"Shurjo", "Siyam Rupali","Roboto","Arial","Helvetica", "Monospace";
+  font-size: 15px;
+  font-weight: 400px;
+}
+p{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin-bottom: 15px;
+}
+img{
+  height: auto;
+  max-width: 100%;
+}
+a{
+  color: black;
+  text-decoration: none;
+  transition: 0.5s;
+}
+a:hover {
+  color: rgb(70, 173, 233);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+ font-weight: 700;
+ font-size: 20px;
+ line-height: 1.5em;
+ margin-bottom: 10px;
+}
+
+/* header area */
+
+#header_area{
+  text-align: center;
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+} 
+
+/* menu area*/
+#main_menu{
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+  padding:5px 0px;
+}
+#main_menu ul {
+  list-style: none;
+}
+#main_menu ul li{
+  display: inline;
+  padding:0 8px ;
+  font-size: 15px;
+}
+#main_menu ul li a{
+  text-decoration: none;
+  color: #000;
+  font-weight:550;
+}
+#main_menu ul li a:hover{
+  color: rgb(70, 173, 233);
+  transition: 0.3s;
+}
+
+/*content area*/
+
+#content{
+  border-bottom: 1px solid #ddd;
+ padding-bottom: 10px;
+}
+#content .container{
+  width: 1140px;
+  margin: 10px auto;
+}
+.container{
+  display: flex;
+  justify-content: space-between; 
+}
+.main_content{
+  flex-basis: 70%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 15px;
+  margin-left: 10px;
+}
+
+.child_content:first-child{
+ grid-column: 1/3;
+ float: right;
+}
+.child_content:first-child img{
+ float: right;
+ width: auto;
+}
+.child_content:nth-child(2) img,
+.child_content:nth-child(3) img,
+.child_content:nth-child(4) img,
+.child_content:nth-child(5) img{
+  display: none;
+}
+
+
+.child_content:nth-child(6) p,
+.child_content:nth-child(7) p,
+.child_content:nth-child(8) p{
+  display: none;
+}
+.child_content:nth-child(6) img,
+.child_content:nth-child(7) img,
+.child_content:nth-child(8) img{
+  width: 110px;
+  float: right;
+}
+
+
+ /* sidber area*/
+
+#main_sidber{
+  flex-basis: 28%;
+  border-left: 1px solid #ddd;
+}
+
+.child_sidber{
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+.child_sidber:last-child{
+  border-bottom: none;
+}
+.child_sidber h3{
+  font-size: 18px;
+  font-weight: 650;
+}
+
+ /* footer area*/
+#footer_area{
+  text-align: center;
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+} 
